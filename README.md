@@ -40,9 +40,9 @@ Saint Peter's University – Data Science Institute, Jersey City, NJ, USA
 ---
 
 ## Live Demo
-- 🌐 **Website** → View Live  
-- 🎥 **Video Walkthrough** → Watch on YouTube  
-- 📄 **NJBDA Journal Reference** → Read More  
+- 🌐 **Website** → View Live (Update Soon) 
+- 🎥 **Video Walkthrough** → Watch on YouTube (Update Soon)
+- 📄 **NJBDA Journal Reference** → Read More  (https://njbda.org/2025symposium/#)
 
 ---
 
