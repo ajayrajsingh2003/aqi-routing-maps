@@ -1,0 +1,31 @@
+AQI Routing System
+│
+├── 1. Data Layer
+│   ├── Air Quality Data (Azure Maps AQI API)
+│   ├── Weather Data (temperature, wind, humidity)
+│   └── Routing Data (Azure Maps Routes API(mode of travel))
+│
+├── 2. Processing Layer
+│   ├── Data Collector
+│   │   └── Fetches route + AQI + weather data in real time
+│   ├── Data Fusion
+│   │   └── Maps AQI values onto route segments (interpolation)
+│   └── Exposure Calculator
+│       └── Computes pollution exposure for each route
+│
+├── 3. Decision Engine
+│   ├── Cost Function:
+│   │   Cost = β * Distance + γ * AQI Exposure
+│   ├── Route Comparator
+│   │   └── Scores all routes
+│   └── Route Selector
+│       └── Picks the best “health-safe” route
+│
+├── 4. Application Layer
+│   ├── Backend (Python / FastAPI)
+│   │   └── Handles API calls, runs decision engine
+│   ├── Frontend (React)
+│   │   └── Visualizes map, routes, AQI overlays
+│   └── Integration
+│       └── Live website + possible mobile app(future work)
+
